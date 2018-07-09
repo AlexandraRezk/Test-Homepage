@@ -42,7 +42,7 @@ li{
 /*Button Positioning*/
 .btn {
     padding-top: 5vw;
-    margin-top: .5vw;
+    margin-top: .6vw;
     margin-right: -20vw;
 }
 
@@ -60,12 +60,11 @@ li{
 	
 /*Social Media Positioning*/
 #social-media{
-	width: 25%;
-	height: 25%;
+	width: 25vw;
 	float: right;
 	text-align: center;
-	margin-right: 10%;
-	margin-top: -8%;
+	margin-right: -20vw;
+	margin-top: -9vw;
 }
 #social-media h3{
 	color: #7BCBA4;
