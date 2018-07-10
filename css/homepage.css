@@ -41,7 +41,7 @@ body{
 }
 
 .btn a img {
-    width: 70vw;
+    width: 50vw;
 	/*width: 19vw;
 	float: right;*/
 }
@@ -86,7 +86,7 @@ body{
     margin-top: -9vw;
 }
     .btn a img {
-    width: 35vw;
+    width: 30vw;
 } 
 }
 
