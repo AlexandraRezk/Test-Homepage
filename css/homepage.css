@@ -2,53 +2,48 @@ body{
 	background-color: #0d0e10;
 	color: #7BCBA4;
 	background-image: url('../images/Pink-pixels-background.png');
-	background-repeat: no-repeat;
-	background-size: 72vw;
+    background-repeat: repeat;
+	background-size: 80vw;
+	/*background-repeat: no-repeat;
+	background-size: 72vw;*/
 	background-attachment: fixed;
 	background-position: center;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Mina', sans-serif;
 }
 
 /*Centers the content vertically*/
 #content{
-        Position: absolute;
+        /*position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%);*/
         margin: 0px auto;
         margin-top: auto;
-        margin: auto
-    
     }
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    display: inline;
-}
 
 /*Main Picture size and Positioning*/
 #mainpic img{
-	width:70vw;
-    margin: 0px auto;
-    float: left;
+    width:90vw;
+	/*width:70vw;*/
+    display: block;
+    margin: 0 auto;
+    /*float: left;*/
     z-index: -1;
 }
 
 /*Button Positioning*/
 .btn {
-    padding-top: 5vw;
+    margin-top: -2.5vw;
+    text-align: center;
+    /*padding-top: 5vw;
     margin-top: .6vw;
-    margin-right: -20vw;
+    margin-right: -20vw;*/
 }
 
 .btn a img {
-	width: 19vw;
-	float: right;
+    width: 70vw;
+	/*width: 19vw;
+	float: right;*/
 }
 
 .btn a img:hover
@@ -59,7 +54,7 @@ li{
 }
 	
 /*Social Media Positioning*/
-#social-media{
+/*#social-media{
 	width: 25vw;
 	float: right;
 	text-align: center;
@@ -80,4 +75,48 @@ li{
         -ms-transform: scale(1.4);
         transform: scale(1.4);
         transform: scale(1.4);
+}*/
+
+/*Tablet size*/
+@media(min-width:800px){
+    #mainpic img{
+    width:85vw;
+}
+    #btn_container {
+    margin-top: -9vw;
+}
+    .btn a img {
+    width: 35vw;
+} 
+}
+
+/*Desktop size*/
+@media(min-width:1000px){
+    body{
+    background-repeat: no-repeat;
+	background-size: 72vw;
+        overflow: hidden;
+    }
+    #content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #mainpic img{
+	width:70vw;
+    float: left;
+}
+    #btn_container {
+    margin-top: 1.5vw;
+}
+    .btn {
+    padding-top: 5vw;
+    margin-top: .6vw;
+    margin-right: -20vw;
+}
+    .btn a img {
+    width: 19vw;
+	float: right;
+    margin-top: -1.5vw;
+}
 }
